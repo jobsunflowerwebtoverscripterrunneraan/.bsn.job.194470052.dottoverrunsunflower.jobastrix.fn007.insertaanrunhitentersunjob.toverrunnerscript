@@ -1,0 +1,115 @@
+.job.git.hubjob.job...@./?..gitjob.hub.webaan...webjob.jobaancom.com:...idc.datbsn.194470052.runneraan.tover.scripter.cyber.god.sadojob...scripteraan.scriptallaanto.../--194470052--.git.idc.datbsn194470052aanonhitaltgr...job.toverscripter.fn.idc.job.aub...run...fnhitaltgr.crtrunnerrollinghitallto.job.toverhubidcdat,gitjobrunneraan
+runneraanrun194470052idcjobdatrunexecuteble.raruitrunaan
+.job.git.hubjob.job...@./?..gitjob.hub.webaan...webjob.jobaancom.com:...idc.datbsn.194470052.runneraan.tover.scripter.cyber.god.sadojob...scripteraan.scriptallaanto.../--194470052--.git.idc.datbsn194470052aanonhitaltgr...job.toverscripter.fn.idc.job.aub...run...fnhitaltgr.crtrunnerrollinghitallto.job.toverhubidcdat,gitjobrunneraan
+
+@@ -5,7 +5,7 @@ body {
+   font: 16px/26px 'Lato',serif;		   font: 16px/26px 'Lato',serif;
+   color: #333;		   color: #333;
+ }		 }
+-header,footer,#graphs {		+header, footer, #graphs {
+   width: 1200px;		   width: 1200px;
+   margin: 20px auto;		   margin: 20px auto;
+ }		 }
+ @@ -15,26 +15,29 @@ h1 {
+ h3 {		 h3 {
+   font-size: 1.5em;		   font-size: 1.5em;
+ }		 }
++#top-title, .graph-title {
++  font-weight: normal;
++  padding-left: 30px;
++}
++#loading, #errormessage {
++  font-weight: normal;
++  text-align: center;
++}
+ .graph-section {		 .graph-section {
+   float: left;		   float: left;
+   margin: 20px 0px;		   margin: 20px 0px;
+ }		 }
+ .graph-container .y-axis {		 .graph-container .y-axis {
+-  width: 50px;		
+   float: left;		   float: left;
++  height: 300px;
++  width: 50px;
+ }		 }
+ .graph-container .graph {		 .graph-container .graph {
+   float: left;		   float: left;
++  height: 300px;
+ }		 }
+-#top-title,.graph-title {		+.legend {
+-  font-weight: normal;		
+-  padding-left: 30px;		
+-}		
+-.rickshaw_legend {		
+   background: transparent;		   background: transparent;
+   color: #333;		   color: #333;
++  padding-left: 30px;
+ }		 }
+-#loading, #errormessage {		
+-  font-weight: normal;		
+-  text-align: center;		
+-}...runner	.job.git.hubjob.job...@./?..gitjob.hub.webaan...webjob.jobaancom.com:...idc.datbsn.194470052.runneraan.tover.scripter.cyber.god.sadojob...scripteraan.scriptallaanto.../--194470052--.git.idc.datbsn194470052aanonhitaltgr...job.toverscripter.fn.idc.job.aub...run...fnhitaltgr.crtrunnerrollinghitallto.job.toverhubidcdat,gitjobrunneraan	
+2  templates/index.html View
+ @@ -20,7 +20,7 @@ <h3 id="errormessage"></h3>
+     </footer>		     </footer>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-1.9.1.min.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-1.9.1.min.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-ui-1.10.2.custom.min.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-ui-1.10.2.custom.min.js') }}"></script>
+-    <script type="text/javascript" src="{{ url_for('static', filename='javascripts/d3.v3.min.js') }}"></script>		+    <script type="text/javascript" src="{{ url_for('static', filename='javascripts/d3.min.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/rickshaw.min.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/rickshaw.min.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/app.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/app.js') }}"></script>
+ </body>		 </body>@@ -5,7 +5,7 @@ body {
+   font: 16px/26px 'Lato',serif;		   font: 16px/26px 'Lato',serif;
+   color: #333;		   color: #333;
+ }		 }
+-header,footer,#graphs {		+header, footer, #graphs {
+   width: 1200px;		   width: 1200px;
+   margin: 20px auto;		   margin: 20px auto;
+ }		 }
+ @@ -15,26 +15,29 @@ h1 {
+ h3 {		 h3 {
+   font-size: 1.5em;		   font-size: 1.5em;
+ }		 }
++#top-title, .graph-title {
++  font-weight: normal;
++  padding-left: 30px;
++}
++#loading, #errormessage {
++  font-weight: normal;
++  text-align: center;
++}
+ .graph-section {		 .graph-section {
+   float: left;		   float: left;
+   margin: 20px 0px;		   margin: 20px 0px;
+ }		 }
+ .graph-container .y-axis {		 .graph-container .y-axis {
+-  width: 50px;		
+   float: left;		   float: left;
++  height: 300px;
++  width: 50px;
+ }		 }
+ .graph-container .graph {		 .graph-container .graph {
+   float: left;		   float: left;
++  height: 300px;
+ }		 }
+-#top-title,.graph-title {		+.legend {
+-  font-weight: normal;		
+-  padding-left: 30px;		
+-}		
+-.rickshaw_legend {		
+   background: transparent;		   background: transparent;
+   color: #333;		   color: #333;
++  padding-left: 30px;
+ }		 }
+-#loading, #errormessage {		
+-  font-weight: normal;		
+-  text-align: center;		
+-}		
+2  templates/index.html View
+ @@ -20,7 +20,7 @@ <h3 id="errormessage"></h3>
+     </footer>		     </footer>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-1.9.1.min.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-1.9.1.min.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-ui-1.10.2.custom.min.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/jquery-ui-1.10.2.custom.min.js') }}"></script>
+-    <script type="text/javascript" src="{{ url_for('static', filename='javascripts/d3.v3.min.js') }}"></script>		+    <script type="text/javascript" src="{{ url_for('static', filename='javascripts/d3.min.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/rickshaw.min.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/rickshaw.min.js') }}"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/app.js') }}"></script>		     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/app.js') }}"></script>
+ </body>		 </body>
